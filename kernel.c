@@ -4,10 +4,8 @@
 #include "colours.h"
 
 // Force cross-compiling
-#if defined(__linux__)
-    #error "Must compile in a cross compiler"
-#elif !defined(__i386__)
-    #error "Must be compiler witha x86-elf compiler"
+#if !defined(__i386__)
+    #error "Must be compiler witha i386 compiler"
 #endif
 
 // x86 VGA textmode buffer
