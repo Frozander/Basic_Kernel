@@ -19,7 +19,7 @@ const int VGA_ROWS = 25;
 // Variables for holding current row and collumn of the terminal
 int term_col = 0;
 int term_row = 0;
-uint8_t term_colour = 0x0F; // Black bg, white fg
+uint8_t term_colour; // Black bg, white fg
 
 // Initiate terminal by clearing it
 void term_init()
