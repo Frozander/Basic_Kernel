@@ -20,7 +20,6 @@ $(OBJ_DIR)/%.o: %.s
 	$(CC) $(C_FLAGS) $< -o $@
 
 build_kernel: $(OBJ)
-	@mkdir -p $(@D)
 	$(CC) $(C_LINKER_FLAGS) $^ -o $(BUILD_DIR)/mykernel.elf
 	echo "qemu-system-i386 -kernel mykernel.elf" > ./out/kernel_start.bat
 
