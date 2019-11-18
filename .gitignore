@@ -1,3 +1,6 @@
 # Build directories
 out/
 int/
+
+# vscode directories
+.vscode/
